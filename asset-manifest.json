@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/answervivek/static/css/main.a0c5deae.chunk.css",
+    "main.js": "/answervivek/static/js/main.009517c2.chunk.js",
+    "main.js.map": "/answervivek/static/js/main.009517c2.chunk.js.map",
+    "runtime-main.js": "/answervivek/static/js/runtime-main.a431ef1c.js",
+    "runtime-main.js.map": "/answervivek/static/js/runtime-main.a431ef1c.js.map",
+    "static/js/2.2cbb2b35.chunk.js": "/answervivek/static/js/2.2cbb2b35.chunk.js",
+    "static/js/2.2cbb2b35.chunk.js.map": "/answervivek/static/js/2.2cbb2b35.chunk.js.map",
+    "index.html": "/answervivek/index.html",
+    "static/css/main.a0c5deae.chunk.css.map": "/answervivek/static/css/main.a0c5deae.chunk.css.map",
+    "static/js/2.2cbb2b35.chunk.js.LICENSE.txt": "/answervivek/static/js/2.2cbb2b35.chunk.js.LICENSE.txt",
+    "static/media/logo.103b5fa1.svg": "/answervivek/static/media/logo.103b5fa1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a431ef1c.js",
+    "static/js/2.2cbb2b35.chunk.js",
+    "static/css/main.a0c5deae.chunk.css",
+    "static/js/main.009517c2.chunk.js"
+  ]
+}

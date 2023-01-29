@@ -128,3 +128,32 @@ public class ResponseDataUtil {
     appVersion = privateName;
   }
 }
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+package com.javatechie.crud.example.utill;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+@Data
+@EqualsAndHashCode(callSuper=false)
+public class ResponseDataHandler  extends DataHandler
+{
+    private static final long serialVersionUID = 1L;
+    private Map<String,String> version;
+    private Map<String,String> status;
+    private Object data;
+    private boolean isError;
+
+    public ResponseDataHandler()
+    {
+        Map<String,String> map=new HashMap<String,String>();
+        map.put("name", "vanilla");
+        map.put("version", "10.0.1");
+        this.version=map;
+    }
+}
+

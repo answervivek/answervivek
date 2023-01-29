@@ -1,3 +1,25 @@
+ @GetMapping("/productById/{id}")
+    public ResponseDataHandler findProductById(@PathVariable int id) {
+        try {
+            return service.getProductById(id);
+        } catch (Exception e) {
+            return ResponseDataUtil.getResponse(e.getMessage(), BADREQUEST, e.toString());
+        }
+    }
+    
+    
+      public ResponseDataHandler getProductById(int id) {
+        Optional<Product> product = repository.findById(id);
+        if (product.isPresent()) {
+            return ResponseDataUtil.getResponse(product.get(),200, "Success" );
+        } else {
+            return ResponseDataUtil.getResponse(product.get(), BADREQUEST, "Product not found");
+        }
+    }
+    private static final int BADREQUEST = 400;
+    
+
+
 @Configuration
 public class ResponseDataUtil {
   private static String appVersion;
